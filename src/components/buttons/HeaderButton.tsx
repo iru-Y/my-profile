@@ -7,7 +7,7 @@ interface HeaderButtonProps {
 const HeaderButton: React.FC<HeaderButtonProps> = ({text}) => {
 
     return (
-        <button className="headerButton">{text}</button>
+        <button className="headerButton" >{text}</button>
     );
 };
 

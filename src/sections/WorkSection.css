@@ -1,13 +1,16 @@
 .work-section {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 50px; 
-    width: 100%;
-    align-items: center;
+    margin-top: 150px; 
+    
 }
 
 .work-section p {
     text-align: left;
     color: #fff; 
     font-size: 24px;
+}
+
+.grid-word{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); 
 }

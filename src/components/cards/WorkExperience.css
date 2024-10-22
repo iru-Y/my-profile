@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+.work-experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 570px;
+    height: 192.68px;
+    background: linear-gradient(110.49deg, 
+        #130428 20%, 
+        #251043 68%, 
+        #38126D 85%, 
+        #261045 95%, 
+        #190634 100%);
+    box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    border-top: 2px solid #4F228D;
+}
+
+.pp {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}

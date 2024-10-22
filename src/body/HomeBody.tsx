@@ -7,6 +7,10 @@ const HomeBody: React.FC = () => {
     <div className="home-body">
       <ProfileSection />
       <WorkSection />
+     <div style={{paddingTop: '200px'}}>
+     <p>Atualmente estou buscando entrar em um time para resolver cada vez mais desafios. </p>
+     <img src="src/assets/bitmap.svg" alt="" />
+     </div>
     </div>
   );
 };
