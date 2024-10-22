@@ -1,0 +1,13 @@
+.work-section {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px; 
+    width: 100%;
+    align-items: center;
+}
+
+.work-section p {
+    text-align: left;
+    color: #fff; 
+    font-size: 24px;
+}

@@ -34,9 +34,9 @@ const ProfileSection = () => {
         <p>Atualmente trabalhando como freelancer.</p>
       </div>
 
-      <div>
+      <div className="about-me">
         <p>
-        Resolvendo problemas dos meus clientes da área da tecnologia desde os 14 anos de idade. Antes na manutenção de computadores e celulares, agora, com sites, aplicativos e servidores.
+        Resolvendo problemas da área da tecnologia. Sites bonitos, aplicativos perfomáticos e servidores de alta escalabilidade.
         </p>
       </div>
     </section>
@@ -44,4 +44,3 @@ const ProfileSection = () => {
 };
 
 export default ProfileSection;
-;
