@@ -69,7 +69,6 @@
   
   .hobby-circle {
     position: absolute;
-    background-image: url('src/assets/circula.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 190px; 

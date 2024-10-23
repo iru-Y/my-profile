@@ -22,7 +22,8 @@ const ProfileSection = () => {
           </p>
 
           <span className="profession-text">
-            são os únicos profissionais que têm como <span className="hobby-circle">hobby</span>
+            são os únicos profissionais que têm como <span className="hobby-circle"
+             style={{backgroundImage: `url(${'public/circula.svg'})`}}>hobby</span>
           </span>
 
           <p className="profession-subtitle">a própria profissão.</p>
