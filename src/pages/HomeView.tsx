@@ -1,6 +1,7 @@
 import React from "react";
 import HomeHeader from "../header/HomeHeader";
 import HomeBody from "../body/HomeBody";
+import HomeFooter from "../footer/HomeFooter";
 
 const HomeView: React.FC = () => {
   return (
@@ -12,6 +13,9 @@ const HomeView: React.FC = () => {
       <body>
         <HomeBody />
       </body>
+      <footer>
+        <HomeFooter/>
+      </footer>
     </>
   );
 };

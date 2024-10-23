@@ -1,14 +1,73 @@
-.homeHeader{
+.homeHeader {
     width: 100%;
     height: 113px;
     padding: 0 120px;
-   
-    flex-direction: row;
-    background-color: #1A0B2E;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A0B2E;
 }
 
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 113px;
+        right: 0;
+        background-color: #1A0B2E;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .homeHeader {
+        padding: 0 20px;
+    }
+}
 .group-headerButton {
     gap: 113px;
     align-items: center;
@@ -16,13 +75,4 @@
     display: flex;
     flex: 5;
     justify-content: end;
-}
-
-.homeHeader img{
-    display: flex;
-    flex: 1;
-    padding-right: 100px;
-    width: 100px;
-    align-items: start;
-    justify-content: start;
 }

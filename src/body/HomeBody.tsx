@@ -8,7 +8,7 @@ const HomeBody: React.FC = () => {
       <ProfileSection />
       <WorkSection />
      <div style={{paddingTop: '200px'}}>
-     <p>Atualmente estou buscando entrar em um time para resolver cada vez mais desafios. </p>
+     <p>Estou buscando entrar em uma equipe para resolver cada vez mais desafios. </p>
      <img src="/bitmap.svg" alt="" />
      </div>
     </div>

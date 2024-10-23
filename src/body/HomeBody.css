@@ -5,3 +5,18 @@
     align-items: center;
     flex-direction: column;
 }
+
+@media only screen and (max-width: 768px) {
+    .home-body {
+        height: auto; 
+        padding: 20px; 
+        align-items: flex-start; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-body {
+        padding: 10px; 
+        align-items: center;
+    }
+}

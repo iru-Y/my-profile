@@ -23,3 +23,30 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 768px) {
+    .work-experience {
+        width: 90%; 
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .pp {
+        padding-left: 0; 
+        padding-top: 10px; 
+        align-items: center;
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .work-experience {
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .pp {
+        padding-top: 5px; 
+    }
+}
