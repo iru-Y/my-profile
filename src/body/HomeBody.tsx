@@ -9,7 +9,7 @@ const HomeBody: React.FC = () => {
       <WorkSection />
      <div style={{paddingTop: '200px'}}>
      <p>Atualmente estou buscando entrar em um time para resolver cada vez mais desafios. </p>
-     <img src="src/assets/bitmap.svg" alt="" />
+     <img src="/bitmap.svg" alt="" />
      </div>
     </div>
   );

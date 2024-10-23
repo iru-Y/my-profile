@@ -8,19 +8,19 @@ const WorkSection = () => {
 
          <div className='grid-word'>
 
-         <WorkExperience img={'src/assets/zoe-express.svg'}
+         <WorkExperience img={'/zoe-express.svg'}
         ptext={'Zoé Express'}
         stext={'Soluções personalizadas para entregas rápidas e confiáveis.'}
         />
-   <WorkExperience img={'src/assets/zoe-express.svg'}
+   <WorkExperience img={'/zoe-express.svg'}
         ptext={'Zoé Express'}
         stext={'Soluções personalizadas para entregas rápidas e confiáveis.'}
         />
-   <WorkExperience img={'src/assets/zoe-express.svg'}
+   <WorkExperience img={'/zoe-express.svg'}
         ptext={'Zoé Express'}
         stext={'Soluções personalizadas para entregas rápidas e confiáveis.'}
         />
-   <WorkExperience img={'src/assets/zoe-express.svg'}
+   <WorkExperience img={'/zoe-express.svg'}
         ptext={'Zoé Express'}
         stext={'Soluções personalizadas para entregas rápidas e confiáveis.'}
         />
