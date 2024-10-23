@@ -4,14 +4,14 @@ const ProfileSection = () => {
   return (
     <section className="container">
       <div className="my-name">
-        <img src="src/assets/profile-arrow.svg" alt="Seta de perfil" />
+        <img src="/profile-arrow.svg" alt="Seta de perfil" />
         <p>Olá! Eu sou </p>
         <p style={{ color: "#7127BA" }}>Yuri Matthewus</p>
       </div>
 
       <div className="profile">
         <img
-          src="src/assets/eu.png"
+          src="/eu.png"
           alt="Foto de Yuri"
           style={{ width: "268px", height: "268px" }}
         />
