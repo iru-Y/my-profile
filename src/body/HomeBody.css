@@ -1,6 +1,7 @@
 .home-body {
     display: flex;
-    height: 100%;
+    height: auto;
+    width: auto;
     background-color: #11071F;
     align-items: center;
     flex-direction: column;

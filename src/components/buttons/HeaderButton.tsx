@@ -1,13 +1,14 @@
-import React from "react";
 import './HeaderButton.css'
 interface HeaderButtonProps {
     text: string;
+    targetRef: ()=>void;
 }
 
-const HeaderButton: React.FC<HeaderButtonProps> = ({text}) => {
+const HeaderButton: React.FC<HeaderButtonProps> = ({text, targetRef}) => {
+  
 
     return (
-        <button className="headerButton" >{text}</button>
+        <button className="headerButton" onClick={targetRef}>{text}</button>
     );
 };
 

@@ -1,18 +1,24 @@
 import './HomeHeader.css'
 import '../components/buttons/HeaderButton.css'
-import { useState } from "react";
-const HomeHeader: React.FC = () =>{
+import HeaderButton from '../components/buttons/HeaderButton';
+import React, {useState} from 'react'
+
+interface HomeHeaderProps {
+  scrollToHeader: ()=>void;
+  scrollToBody: ()=>void;
+  scrollToFooter: ()=>void;
+  headerRef: React.RefObject<HTMLDivElement>
+}
+
+const HomeHeader: React.FC<HomeHeaderProps> = ({scrollToHeader, scrollToBody, scrollToFooter, headerRef}) =>{
 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
     return (
-      
-
-        <div className="homeHeader">
+      <div className="homeHeader" ref={headerRef}>
           
           <img src="/header-icon.svg" alt="" style={{width: '100px', height: '100px'}}/>
           
@@ -24,9 +30,9 @@ const HomeHeader: React.FC = () =>{
 
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
         <ul className="group-headerButton">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+         <HeaderButton  targetRef={scrollToHeader} text='Ínicio'  />
+         <HeaderButton targetRef={scrollToBody} text='Sobre'/>
+         <HeaderButton targetRef={scrollToFooter} text='Contato'/>
         </ul>
       </nav>
         </div>

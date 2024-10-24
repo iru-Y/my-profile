@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import HomeHeader from "../header/HomeHeader";
 import HomeBody from "../body/HomeBody";
 import HomeFooter from "../footer/HomeFooter";
 
 const HomeView: React.FC = () => {
+  const headerRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const footerRef = useRef<HTMLDivElement>(null);
+
+ const scrollToHeader = () =>{
+  window.scrollTo({ top: 0, behavior: 'smooth' });;
+  }
+  const scrollToBody = () =>{
+    bodyRef.current?.scrollIntoView({behavior: 'smooth'});
+}
+const scrollToFooter = () =>{
+  footerRef.current?.scrollIntoView({behavior: 'smooth'});
+}
+
   return (
     <>
-      <header>
-        <HomeHeader />
-      </header>
-
-      <body>
-        <HomeBody />
-      </body>
-      <footer>
-        <HomeFooter/>
-      </footer>
+        <HomeHeader headerRef={headerRef} scrollToHeader={scrollToHeader} scrollToBody={scrollToBody} scrollToFooter={scrollToFooter}/>
+        <HomeBody   bodyRef={bodyRef}/>
+        <HomeFooter footerRef={footerRef}/>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import "./App.css";
 import HomeView from "./pages/HomeView";
 function App() {
+  
   return (
       <HomeView />
   );

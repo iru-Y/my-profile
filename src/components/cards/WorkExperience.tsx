@@ -18,7 +18,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 }) => {
   return (
     <div className="work-experience">
-      <img src={img} alt="" width={100} height={100} />
+      <img src={img} alt=""/>
       <div className="pp">
         <p style={{ fontSize: 26 , fontFamily:  "Poppins", fontWeight: "bolder"}}>{ptext}</p>
         <p style={{ fontSize: 8,  fontFamily:  "Poppins", fontWeight: "bolder" }}>{stext}</p>
